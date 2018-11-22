@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        broadcastReceiver=new SMSBroadcastReceiver();
-        broadcastReceiver1=new SMSBroadcastReceiver();
+        broadcastReceiver=new ConnectivityBroadcastReceiver();
+        broadcastReceiver1=new ConnectivityBroadcastReceiver();
         customBroadcastReceiver=new CustomBroadcastReceiver();
         localBroadcastManager=localBroadcastManager.getInstance(this);
     }
